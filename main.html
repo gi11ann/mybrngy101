@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Website</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex: 0 0 auto;">
+            <img src="brngy.jpeg" alt="Barangay Image" style="max-width: 15%; height: auto;">
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h1>Welcome to Barangay 1-B</h1>
+        </div>
+        <nav style="flex: 1; text-align: right;">
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: flex-end;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About Us</a></li> <!-- Link updated here -->
+                <li><a href="#subscribe" id="subscribeBtn">Subscribe to Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="home">
+        <div class="section-container">
+        <section>
+            <h2>Home</h2>
+            <p>Welcome to Barangay 1-B. We are committed to serving our community with pride and excellence.</p>
+            <p>Explore our services and learn more about us!</p>
+            <p>Barangay I‑B City of San Pablo Province of Laguna Contents, </p>
+            <p> Demographics§ Location§ Adjacent barangays§ Notes Summary </p>
+            <p>data Type	barangay Island group	Luzon Region CALABARZON</p>
+            <p>(Region IV‑A) Province Laguna City San Pablo Postal code 4000 Population</p>
+            <p>(2020) 4,002 Philippine major island(s) Luzon Coordinates</p>
+            <p>14.0692, 121.3164 (14° 4' North, 121° 19' East) Estimated elevation</p>
+            <p>above sea level 103.7 meters (340.2 feet) Barangay I‑B,</p>
+            <p>formerly Poblacion, is a barangay in the city of San Pablo,</p>
+            <p>in the province of Laguna. Its population as determined by the 2020 Census was 4,002.</p>
+            <p>This represented 1.40% of the total population of San Pablo.</p>
+        </section>
+         </div>
+     </main>
+
+
+    <!-- pop up 5 seconds -->
+    <div id="newsletterPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img class="newsletter-image" src="brngy.jpeg" alt="Newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest news, events, and services in Barangay 1-B. Here’s why you should subscribe:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <style>
+        body {
+            background-image: url('koket.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #A94064;
+        }
+    </style>
+    
+    
+    
+
+
+    <!-- pop up service-->
+
+    <div id="notAvailablePopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h3>Not Available</h3>
+            <p>Our services are not available at the moment.</p>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Barangay 1-B. All Rights Reserved.</p>
+    </footer>
+
+    <script src="say.js"></script>
+</body>
+</html>
